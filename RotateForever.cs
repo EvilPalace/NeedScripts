@@ -37,12 +37,13 @@ public class RotateForever : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		anglePer = allAngle * timePer / timeOfRotateOnePeriod;
+		
 		initialRotation = transform.rotation;
 	}
 	
 	// Update is called once per frame
 	void Update () {
+		anglePer = allAngle * timePer / timeOfRotateOnePeriod;
 		if (isRotate) {
 			Vector3 axis;
 			switch (space) {
